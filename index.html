@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Software Engineer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#4F46E5",
+            dark: "#1E1E2F"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark text-white font-sans scroll-smooth">
+
+  <!-- Navbar -->
+<header class="bg-dark p-4 sticky top-0 shadow-md z-10">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+    <h1 class="text-lg sm:text-xl font-bold mb-2 md:mb-0 text-center md:text-left bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">
+      Saroj Kumar Panda
+    </h1>
+    <nav>
+      <ul class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 text-sm">
+        <li><a href="#about" class="hover:text-primary">About</a></li>
+        <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+        <li><a href="#experience" class="hover:text-primary">Experience</a></li>
+        <li><a href="#projects" class="hover:text-primary">Projects</a></li>
+        <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section with Profile Image -->
+<section id="about" class="py-16 sm:py-20 text-center bg-gradient-to-br from-indigo-900 via-purple-900 to-gray-900 px-4">
+  <div class="max-w-xl mx-auto">
+    <img src="thumbnail_image.jpg" alt="Profile Photo"
+      class="w-40 h-40 sm:w-64 sm:h-64 rounded-full mx-auto mb-4 border-4 border-primary shadow-lg object-cover transition duration-300 hover:scale-105">
+
+    <h2 class="text-3xl sm:text-4xl font-bold mb-2 bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 text-transparent bg-clip-text">
+      Hi, I'm Saroj 👋
+    </h2>
+    <p class="text-base sm:text-lg text-gray-300">
+      I'm a Software Engineer with 2.5 years of experience in scalable web applications using
+      <span class="text-primary font-semibold">.NET Core</span>, REST APIs, and modern front-end tech.
+    </p>
+
+    <a href="#projects"
+      class="mt-6 inline-block bg-primary text-white py-2 px-5 sm:px-6 rounded-full hover:bg-indigo-700 hover:scale-105 shadow-lg transition">
+      View My Work
+    </a>
+  </div>
+</section>
+
+  
+  
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-8">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-gray-300">
+        <div class="bg-gray-800 p-4 rounded-xl">.NET Core</div>
+        <div class="bg-gray-800 p-4 rounded-xl">C#</div>
+        <div class="bg-gray-800 p-4 rounded-xl">SQL Server</div>
+        <div class="bg-gray-800 p-4 rounded-xl">HTML/CSS</div>
+        <div class="bg-gray-800 p-4 rounded-xl">JavaScript</div>
+        <div class="bg-gray-800 p-4 rounded-xl">REST APIs</div>
+        <div class="bg-gray-800 p-4 rounded-xl">Azure Basics</div>
+        <div class="bg-gray-800 p-4 rounded-xl">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16 bg-gray-900 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-semibold text-center mb-10">Experience</h3>
+      <div class="space-y-6">
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <h4 class="text-xl font-bold">Software Engineer At LEEGO SOLUTION PVT. Ltd.</h4>
+          <p class="text-sm text-gray-400">Jan 2022 - Present</p>
+          <ul class="list-disc ml-5 mt-2 text-sm text-gray-300">
+            <li>Developed scalable APIs using .NET Core.</li>
+            <li>Worked on UI using Razor Pages and integrated with back-end APIs.</li>
+            <li>Collaborated with UI/UX team to deliver clean and responsive designs.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects (No Images) -->
+<section id="projects" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-10">Projects</h3>
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        
+        <!-- Project 1 -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold mb-2 text-white">Student Management System</h4>
+          <p class="text-sm text-gray-300 mb-3">
+            Built with ASP.NET Core MVC and SQL Server. Allows admin to add, update, delete, and view student details. Includes server-side validation and role-based access.
+          </p>
+          <a href="https://github.com/yourusername/student-management-system" target="_blank" class="text-primary text-sm hover:underline">View on GitHub</a>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold mb-2 text-white">Visitor Tracking System</h4>
+          <p class="text-sm text-gray-300 mb-3">
+            A secure web application for logging and managing visitor entries using .NET Core, JavaScript, and SQL. Includes date/time slot validations and auto email alerts.
+          </p>
+          <a href="https://github.com/yourusername/visitor-tracking-system" target="_blank" class="text-primary text-sm hover:underline">View on GitHub</a>
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold mb-2 text-white">Resume Builder App</h4>
+          <p class="text-sm text-gray-300 mb-3">
+            Developed a dynamic resume builder with form inputs and real-time preview. Built using Razor Pages and .NET Core. PDF export using JS libraries.
+          </p>
+          <a href="#" class="text-primary text-sm hover:underline">Coming Soon</a>
+        </div>
+  
+        <!-- Project 4 -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold mb-2 text-white">Login with OTP in .NET Core</h4>
+          <p class="text-sm text-gray-300 mb-3">
+            Implemented login functionality with OTP verification using C#, Twilio API, and Entity Framework Core. Focused on security, validation, and user feedback.
+          </p>
+          <a href="https://github.com/yourusername/otp-login-netcore" target="_blank" class="text-primary text-sm hover:underline">View on GitHub</a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Resume -->
+  <section class="py-12 text-center bg-gray-900">
+    <h3 class="text-3xl font-semibold mb-4">Download My Resume</h3>
+    <a href="Saroj_Resume.pdf" download class="bg-primary text-white py-2 px-4 rounded-full hover:bg-indigo-600 transition">Download PDF</a>
+  </section>
+
+  <!-- Contact Me -->
+<section id="contact" class="py-16 px-4 bg-gray-900 text-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-6">Contact Me</h3>
+      <p class="mb-8 text-gray-400">
+        Have a project or job opportunity? Feel free to reach out via the form below.
+      </p>
+      <form id="contactForm" class="space-y-6 text-left bg-gray-800 p-6 rounded-xl shadow-lg">
+        <div>
+          <label class="block mb-2 text-sm">Your Name</label>
+          <input type="text" id="name" class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary" required>
+        </div>
+        <div>
+          <label class="block mb-2 text-sm">Your Email</label>
+          <input type="email" id="email" class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary" required>
+        </div>
+        <div>
+          <label class="block mb-2 text-sm">Your Message</label>
+          <textarea id="message" rows="4" class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+        </div>
+        <button type="submit" class="bg-primary px-6 py-3 rounded text-white hover:bg-indigo-600 transition">
+          Send Message
+        </button>
+        <p id="formSuccess" class="text-green-400 mt-4 hidden">Thank you! Your message has been sent.</p>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-gray-500 text-sm py-6 text-center">
+    &copy; 2025 Saroj Kumar Panda. All rights reserved.
+  </footer>
+
+  <!-- JS for Contact Form -->
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      document.getElementById('formMsg').classList.remove('hidden');
+    }
+  </script>
+  <!-- Footer -->
+<footer class="bg-gray-950 text-gray-400 text-sm py-6 mt-10">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+      <p>&copy; 2025 Saroj Kumar Panda. All rights reserved.</p>
+      
+      <!-- Social Links -->
+      <div class="mt-4 md:mt-0 flex space-x-4">
+        <a href="https://github.com/sarojkumarpanda" target="_blank" class="hover:text-white transition">GitHub</a>
+        <a href="https://linkedin.com/in/sarojkumarpanda" target="_blank" class="hover:text-white transition">LinkedIn</a>
+        <a href="mailto:sarojpanda@gmail.com" class="hover:text-white transition">Email</a>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
